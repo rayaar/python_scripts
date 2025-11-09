@@ -61,7 +61,7 @@ def main():
 	justwords = []
 	with open("web2.txt","r") as dic:
 		for i,word in enumerate(dic):
-			if word >= 2:
+			if len(word) >= 2:
 				word = normalize(word)
 				word = word.strip()
 				byindex[i] = word
